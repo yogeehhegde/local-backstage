@@ -8,6 +8,7 @@ metadata:
     kafka.apache.org/consumer-groups: 127.0.0.1:9092/console-consumer-4612
     backstage.io/kubernetes-label-selector: "namespace=otk-local"
     backstage.io/code-coverage: enabled
+    backstage.io/techdocs-ref: docs
   links:
     - url: http://localhost:3000/catalog
       title: local backstage
