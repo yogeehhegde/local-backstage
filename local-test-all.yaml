@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: PFI
+  description: PFI Backstage
+spec:
+  targets:
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.user.yaml
+   
