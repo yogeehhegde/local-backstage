@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: local-backstage
   namespace: local-flex
+  labels:
+    example.com/otk: done
   annotations:
     github.com/project-slug: yogeehhegde/local-backstage
     kafka.apache.org/consumer-groups: 127.0.0.1:9092/console-consumer-4612
@@ -16,7 +18,6 @@ metadata:
   tags:
     - local
     - dev
-    - otk: todo
 spec:
   type: service
   lifecycle: experimental
