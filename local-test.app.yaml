@@ -4,10 +4,10 @@ metadata:
   name: local-backstage
   namespace: local-flex
   labels:
-    example.com/compliance/sox: false
-    example.com/compliance/security: red
+    example.com/compliance/sox: "false"
+    example.com/compliance/security: "red"
     example.com/compliance/tier: "1"
-    example.com/compliance/hippa: false
+    example.com/compliance/hippa: "false"
   annotations:
     github.com/project-slug: yogeehhegde/local-backstage
     kafka.apache.org/consumer-groups: 127.0.0.1:9092/console-consumer-4612
