@@ -18,6 +18,8 @@ metadata:
   tags:
     - local
     - dev
+    - otk-todo
+    - regional-done
 spec:
   type: service
   lifecycle: experimental
