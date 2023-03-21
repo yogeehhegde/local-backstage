@@ -18,6 +18,7 @@ metadata:
   tags:
     - otk-todo
     - regional-done
+    - greendot-done
 spec:
   type: service
   lifecycle: experimental
