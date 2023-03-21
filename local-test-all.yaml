@@ -5,5 +5,13 @@ metadata:
   description: PFI Backstage
 spec:
   targets:
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.bu.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.productgroup.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.team.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.user.yaml
-   
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.system.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.app.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.app1.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.kafka.resource.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.dynamo.resource.yaml
+    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.redis.resource.yaml
