@@ -16,6 +16,7 @@ metadata:
   tags:
     - local
     - dev
+    - otk: todo
 spec:
   type: service
   lifecycle: experimental
