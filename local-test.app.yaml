@@ -16,8 +16,8 @@ metadata:
       title: local backstage
       icon: dashboard
   tags:
-    - otk: todo
-    - regional: done
+    - otk-todo
+    - regional-done
 spec:
   type: service
   lifecycle: experimental
