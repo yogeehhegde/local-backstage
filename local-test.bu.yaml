@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: flex
+  namespace: local-flex
+  description: The Flex Bu
+  bu_lead: sgaddipati
+  bu_lead_delegate: mguo
+spec:
+  type: business-unit
+  profile:
+    displayName: flex
+  children: [flex-platform-services]

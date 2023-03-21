@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: local-backstage
+  namespace: local-flex
+  annotations:
+    github.com/project-slug: yogeehhegde/local-backstage
+    kafka.apache.org/consumer-groups: 127.0.0.1:9092/console-consumer-4612
+    backstage.io/kubernetes-label-selector: "namespace=otk-local"
+  links:
+    - url: http://localhost:3000/catalog
+      title: local backstage
+      icon: dashboard
+  tags:
+    - local
+    - dev
+spec:
+  type: service
+  lifecycle: experimental
+  owner: flex-platform-iac
+  system: flex-iac
+  dependsOn:
+    - resource:local-flex/central-kafka
+    - component:local-flex/flex-platform-services-metadata
+    - resource:local-flex/flex-redis
