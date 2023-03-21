@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: flex-redis
+  namespace: local-flex
+  description: flex redis
+spec:
+  type: database
+  owner: flex-platform-iac
+  system: flex-iac
