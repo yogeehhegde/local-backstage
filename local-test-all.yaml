@@ -10,7 +10,7 @@ spec:
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.team.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.user.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.system.yaml
-    - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.app.yaml
+#     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.app.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.app1.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.kafka.resource.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.dynamo.resource.yaml
