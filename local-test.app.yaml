@@ -4,9 +4,18 @@ metadata:
   name: local-backstage
   namespace: local-flex
   labels:
-   
+    example.com/sox: "false"
     example.com/security: red
-    
+    example.com/tier: 1
+    example.com/hippa: "false"
+    example.com/stateless: "true"
+    example.com/envoy_enabled: "true"
+    example.com/containerised: done
+    example.com/greendot: todo
+    example.com/multi_region: todo
+    example.com/regional: todo
+    example.com/otk: todo
+    example.com/al22: todo
   annotations:
     github.com/project-slug: yogeehhegde/local-backstage
     kafka.apache.org/consumer-groups: 127.0.0.1:9092/console-consumer-4612
@@ -18,15 +27,13 @@ metadata:
       title: local backstage
       icon: dashboard
   tags:
-    - otk-todo
-    - regional-done
-    - greendot-done
+   
 spec:
   type: service
   lifecycle: experimental
   owner: flex-platform-iac
   system: flex-iac
-  dependencyOf:
+  dependsOn:
     - resource:local-flex/central-kafka
     - component:local-flex/flex-platform-services-metadata
     - resource:local-flex/flex-redis
