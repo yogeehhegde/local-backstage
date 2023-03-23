@@ -35,4 +35,4 @@ spec:
     - resource:local-flex/central-kafka
     - resource:local-flex/flex-redis
   dependencyOf:
-    - component:local-flex/flex-platform-services-metadata
+    - component:local-flex/flex-orchestrator
