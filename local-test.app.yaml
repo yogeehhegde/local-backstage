@@ -6,7 +6,7 @@ metadata:
   labels:
     example.com/sox: "false"
     example.com/security: red
-    example.com/tier: 1
+    example.com/tier: "1"
     example.com/hippa: "false"
     example.com/stateless: "true"
     example.com/envoy_enabled: "true"
