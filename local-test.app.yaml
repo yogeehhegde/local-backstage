@@ -25,7 +25,7 @@ metadata:
   links:
     - url: http://localhost:3000/catalog
       title: local backstage
-      icon: dashboard
+      icon: dashboard    
 spec:
   type: service
   lifecycle: experimental
@@ -33,5 +33,6 @@ spec:
   system: flex-iac
   dependsOn:
     - resource:local-flex/central-kafka
-    - component:local-flex/flex-platform-services-metadata
     - resource:local-flex/flex-redis
+  dependencyOf:
+    - component:local-flex/flex-platform-services-metadata
