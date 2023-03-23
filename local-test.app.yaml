@@ -26,7 +26,7 @@ spec:
   lifecycle: experimental
   owner: flex-platform-iac
   system: flex-iac
-  dependsOn:
+  dependencyOf:
     - resource:local-flex/central-kafka
     - component:local-flex/flex-platform-services-metadata
     - resource:local-flex/flex-redis
