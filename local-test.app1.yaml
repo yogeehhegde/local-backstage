@@ -12,3 +12,5 @@ spec:
   system: flex-iac
   dependsOn:
     - resource:local-flex/flex-dynamodb
+  dependsOn:
+    - resource:local-flex/local-backstage  
