@@ -1,10 +1,38 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: local-backstage
+  name: test-backstage
+  description: Sample backstage test repo
   annotations:
-    github.com/project-slug: yogeehhegde/local-backstage
+    pagerduty.com/service-id: xxxxx
+    github.com/project-slug: twilio-internal/test-backstage
+    buildkite.com/project-slug: twilio/test-backstage
+    backstage.io/kubernetes-namespace: backstage
+    argocd/app-selector: app=backstage
+  links:
+    - title: Runbook
+      url: https://twilio.com
+    - title: Buildkite
+      url: https://buildkite.com/twilio
+    - title: Datadog Dashboard
+      url: https://app.datadoghq.com/dashboard/u8g-kv7-bmg/flex-orch-event-bridge
+  tags:
+    - java
 spec:
-  type: other
-  lifecycle: unknown
-  owner: team-a
+  type: website
+  owner: flex-platform-iac
+  lifecycle: stage
+  dependsOn:
+    - test-s3
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test-s3
+  description: Just a test bucket
+spec:
+  type: s3-bucket
+  owner: flex-platform-iac
+  system: NA
