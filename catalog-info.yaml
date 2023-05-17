@@ -34,5 +34,5 @@ spec:
   type: website
   owner: flex-platform-iac
   lifecycle: stage
-#   dependsOn:
-#     - test-s3
+  dependsOn:
+    - resource:test-s3
