@@ -15,4 +15,4 @@ spec:
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.kafka.resource.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.dynamo.resource.yaml
     - https://github.com/yogeehhegde/local-backstage/blob/main/local-test.redis.resource.yaml
-    - https://github.com/yogeehhegde/local-backstage/blob/main/catalog-info.yaml
+#     - https://github.com/yogeehhegde/local-backstage/blob/main/catalog-info.yaml
