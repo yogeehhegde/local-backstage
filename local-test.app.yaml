@@ -36,15 +36,3 @@ spec:
     - resource:local-flex/flex-redis
   dependencyOf:
     - component:local-flex/flex-orchestrator
-
----
-
-apiVersion: backstage.io/v1alpha1
-kind: Resource
-metadata:
-  name: test-s3
-  description: Just a test bucket
-spec:
-  type: s3-bucket
-  owner: flex-platform-iac
-  system: NA    
