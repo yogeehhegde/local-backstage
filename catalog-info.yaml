@@ -1,4 +1,16 @@
 apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: test-s3
+  description: Just a test bucket
+spec:
+  type: s3-bucket
+  owner: flex-platform-iac
+  system: NA
+
+---  
+
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test-backstage
@@ -22,17 +34,5 @@ spec:
   type: website
   owner: flex-platform-iac
   lifecycle: stage
-#   dependsOn:
-#     - test-s3
-
-# ---
-
-# apiVersion: backstage.io/v1alpha1
-# kind: Resource
-# metadata:
-#   name: test-s3
-#   description: Just a test bucket
-# spec:
-#   type: s3-bucket
-#   owner: flex-platform-iac
-#   system: NA
+  dependsOn:
+    - test-s3
