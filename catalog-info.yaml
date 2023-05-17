@@ -23,7 +23,7 @@ spec:
   owner: flex-platform-iac
   lifecycle: stage
   dependsOn:
-    - resource:flex-test-s3
+    - resource: flex-test-s3
 
 ---
 
